@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">ParkingSpace</string>
     <string name="title_activity_maps">Map</string>
-<<<<<<< Updated upstream
     <string name="go">GO!</string>
     <string name="title_activity_homepage">homepage</string>
     <!-- Strings used for fragments for navigation -->
@@ -13,7 +12,6 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="let_us_find_a_place_for_you">Let us find a place for you...</string>
-    <string name="go">GO!</string>
     <string name="free_parking">Free Parking</string>
     <string name="parking_spaces_available">Parking Spaces Available</string>
     <string name="distance_from_destination">Distance from Destination</string>
@@ -25,7 +23,6 @@
     <string name="_5_km">5 kM</string>
     <string name="logo">logo</string>
     <string name="button">button</string>
-=======
     <string name="title_activity_login">login</string>
     <!--
     This string is used for square devices and overridden by hello_world in
@@ -33,5 +30,4 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_register">register</string>
->>>>>>> Stashed changes
 </resources>
