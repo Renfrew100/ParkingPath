@@ -27,6 +27,6 @@ Ali Aftab, Muhammad
 Jayanti Upadhyay
 Camila Izquierdo
 
-![Image of_login](https://imgur.com/a/3TpEC5d)
-![Image of homepage](https://imgur.com/a/KjucxOM)
-![Image of maps](https://imgur.com/a/8Jo9w53)
+![Image of_login](https://github.com/Renfrew100/ParkingPath/blob/main/images/Screenshot%202021-02-07%20113259.png)
+![Image of homepage](https://github.com/Renfrew100/ParkingPath/blob/main/images/Screenshot%202021-02-07%20113137.png)
+![Image of maps](https://github.com/Renfrew100/ParkingPath/blob/main/images/maps.png)
