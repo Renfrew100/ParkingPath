@@ -1,0 +1,35 @@
+Index: app/src/main/java/com/example/parkingspace/MapsActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.parkingspace;\r\n\r\nimport androidx.fragment.app.FragmentActivity;\r\n\r\nimport android.os.Bundle;\r\n\r\nimport com.google.android.gms.maps.CameraUpdateFactory;\r\nimport com.google.android.gms.maps.GoogleMap;\r\nimport com.google.android.gms.maps.OnMapReadyCallback;\r\nimport com.google.android.gms.maps.SupportMapFragment;\r\nimport com.google.android.gms.maps.model.LatLng;\r\nimport com.google.android.gms.maps.model.MarkerOptions;\r\n\r\npublic class MapsActivity extends FragmentActivity implements OnMapReadyCallback {\r\n\r\n    private GoogleMap mMap;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_maps);\r\n        // Obtain the SupportMapFragment and get notified when the map is ready to be used.\r\n        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()\r\n                .findFragmentById(R.id.map);\r\n        mapFragment.getMapAsync(this);\r\n    }\r\n\r\n    /**\r\n     * Manipulates the map once available.\r\n     * This callback is triggered when the map is ready to be used.\r\n     * This is where we can add markers or lines, add listeners or move the camera. In this case,\r\n     * we just add a marker near Sydney, Australia.\r\n     * If Google Play services is not installed on the device, the user will be prompted to install\r\n     * it inside the SupportMapFragment. This method will only be triggered once the user has\r\n     * installed Google Play services and returned to the app.\r\n     */\r\n    @Override\r\n    public void onMapReady(GoogleMap googleMap) {\r\n        mMap = googleMap;\r\n\r\n        // Add a marker in Sydney and move the camera\r\n        LatLng sydney = new LatLng(-34, 151);\r\n        mMap.addMarker(new MarkerOptions().position(sydney).title(\"Marker in Sydney\"));\r\n        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/parkingspace/MapsActivity.java	(revision fb1c5cde1bae25638232c655eb3858d6c480a491)
++++ app/src/main/java/com/example/parkingspace/MapsActivity.java	(date 1612652041332)
+@@ -21,7 +21,7 @@
+         setContentView(R.layout.activity_maps);
+         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+-                .findFragmentById(R.id.map);
++                .findFragmentById(R.id.mapView5);
+         mapFragment.getMapAsync(this);
+     }
+ 
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"PLATFORM\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"gradleJvm\" value=\"1.8\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision fb1c5cde1bae25638232c655eb3858d6c480a491)
++++ .idea/gradle.xml	(date 1612651892649)
+@@ -15,6 +15,7 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>
