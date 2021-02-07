@@ -1,0 +1,95 @@
+{
+"copyright": "Copyright INRIX Inc.",
+"versionNumber": "5.2",
+"createdDate": "2018-10-17T17:03:14Z",
+"responseId": "39273cc5-942e-437b-b7a3-fcb0d801343e",
+"status": "1",
+"result": {
+"OpenParkingSpot": [
+{
+"Location": {
+"longitude": "11.55860",
+"latitude": "48.14865"
+},
+"OpenAt": "2018-10-18T17:18:51Z"
+},
+{
+"Location": {
+"longitude": "11.57958",
+"latitude": "48.13167"
+},
+"OpenAt": "2018-10-18T17:19:11Z"
+},
+{
+"Location": {
+"longitude": "11.58482",
+"latitude": "48.13390"
+},
+"OpenAt": "2018-10-18T17:19:17Z"
+},
+{
+"Location": {
+"longitude": "11.59251",
+"latitude": "48.14424"
+},
+"OpenAt": "2018-10-18T17:19:28Z"
+},
+{
+"Location": {
+"longitude": "11.56481",
+"latitude": "48.14989"
+},
+"OpenAt": "2018-10-18T17:20:14Z"
+},
+{
+"Location": {
+"longitude": "11.57515",
+"latitude": "48.15649"
+},
+"OpenAt": "2018-10-18T17:20:32Z"
+},
+{
+"Location": {
+"longitude": "11.55514",
+"latitude": "48.14215"
+},
+"OpenAt": "2018-10-18T17:20:29Z"
+},
+{
+"Location": {
+"longitude": "11.55693",
+"latitude": "48.13471"
+},
+"OpenAt": "2018-10-18T17:20:48Z"
+},
+{
+"Location": {
+"longitude": "11.58337",
+"latitude": "48.13293"
+},
+"OpenAt": "2018-10-18T17:21:22Z"
+},
+{
+"Location": {
+"longitude": "11.58121",
+"latitude": "48.15446"
+},
+"OpenAt": "2018-10-18T17:21:38Z"
+},
+{
+"Location": {
+"longitude": "11.58061",
+"latitude": "48.15456"
+},
+"OpenAt": "2018-10-18T17:21:58Z"
+},
+{
+"Location": {
+"longitude": "11.58765",
+"latitude": "48.13064"
+},
+"OpenAt": "2018-10-18T17:22:17Z"
+}
+]
+}
+}

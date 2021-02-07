@@ -2,7 +2,18 @@ package com.example.parkingspace;
 
 import androidx.fragment.app.FragmentActivity;
 
+import android.content.Context;
 import android.os.Bundle;
+
+import java.io.BufferedReader;
+
+import java.io.FileReader;
+
+import java.io.*;
+
+import java.io.IOException;
+
+import java.io.FileNotFoundException;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -11,8 +22,11 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.json.JSONObject;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
+    private static final String FILE_NAME = "";
     private GoogleMap mMap;
 
     @Override
@@ -23,7 +37,32 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapView5);
         mapFragment.getMapAsync(this);
+
+        File file = new File(getFilesDir(),"data.json");
+        FileReader fileReader = null;
+        try {
+            fileReader = new FileReader(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
+        StringBuilder stringBuilder = new StringBuilder();
+        String line = null;
+        try {
+            line = bufferedReader.readLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        while (line != null){
+            stringBuilder.append(line).append("\n");
+            try {
+                line = bufferedReader.readLine();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
+
 
     /**
      * Manipulates the map once available.
