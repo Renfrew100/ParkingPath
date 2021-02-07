@@ -24,7 +24,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     Switch  switch2;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
@@ -71,15 +71,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         });
 
         switch2 = (Switch) findViewById(R.id.switch2);
-       // @Override
-                public void onClick(View view) {
-                    String statusSwitch2;
-                    if (switch2.isChecked())
-                        statusSwitch2 = switch2.getTextOn().toString();
-                    else
-                        statusSwitch2 = switch2.getTextOff().toString();
-                    Toast.makeText(getApplicationContext(),  "Switch2 :" + statusSwitch2, Toast.LENGTH_LONG).show(); // display the current state for switch's
-                });
+        // @Override
+        public void onClick(View view) {
+            String statusSwitch2;
+            if (switch2.isChecked())
+                statusSwitch2 = switch2.getTextOn().toString();
+            else
+                statusSwitch2 = switch2.getTextOff().toString();
+            Toast.makeText(getApplicationContext(),  "Switch2 :" + statusSwitch2, Toast.LENGTH_LONG).show(); // display the current state for switch's
+        };
+    }
+
 
 
         /**
@@ -103,4 +105,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
-}}
+}
