@@ -70,7 +70,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         });
 
-        switch2 = (Switch) findViewById(R.id.switch2);
+ /*       switch2 = (Switch) findViewById(R.id.switch2);
         // @Override
         public void onClick(View view) {
             String statusSwitch2;
@@ -79,7 +79,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             else
                 statusSwitch2 = switch2.getTextOff().toString();
             Toast.makeText(getApplicationContext(),  "Switch2 :" + statusSwitch2, Toast.LENGTH_LONG).show(); // display the current state for switch's
-        };
+        };*/
     }
 
 
